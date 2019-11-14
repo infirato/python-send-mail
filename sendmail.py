@@ -10,13 +10,13 @@ s = smtplib.SMTP("smtp.gmail.com", 587)
 s.starttls()
 
 
-#euthenticate
+#authenticate
 s.login("your-email-here@gmail.com", "Very-Secure-password-here")
 
 #Message to Send
 message = "message you want to send"
 
-#send the email
+#send the email to:
 string = "email1@gmail.com,email2@gmail.com,email3@gmail.com"
 
 s.sendmail("your-email-her@gmail.com",string.split(','), message)
